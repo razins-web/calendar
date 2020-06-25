@@ -1,3 +1,98 @@
+body {
+  background-color: grey; }
 
+header {
+  max-width: 802px;
+  height: 72px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 12px 24px; }
+
+.logo {
+  max-width: 237px;
+  height: 48px;
+  margin-top: 12px;
+  margin-left: 24px;
+  right: 541px;
+  top: 0px;
+  bottom: 0px; }
+
+#top-menu {
+  margin-top: 24px;
+  margin-right: 28px; }
+
+a {
+  color: #F2F2F2;
+  padding: 2px;
+  text-decoration: none; }
+
+#top-menu a:hover {
+  background: blue;
+  border-radius: 99px; }
+
+.IB {
+  height: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.44px;
+  color: #F2F2F2; }
+
+.flights {
+  height: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.44px;
+  color: #F2F2F2; }
+
+.ToDo {
+  height: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.44px;
+  color: #F2F2F2; }
+
+.Meeting {
+  height: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.44px;
+  color: #F2F2F2; }
+
+.Settings {
+  height: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.44px;
+  color: #F2F2F2;
+  padding: 16px 0; }
 
 /*# sourceMappingURL=style.css.map */
