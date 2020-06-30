@@ -1,5 +1,16 @@
 body {
-  background-color: grey;
+  max-width: 1440px;
+  max-height: 1366px;
+  background: #2A2731;
+  border-radius: 10px;
+}
+
+#center {
+  max-width: 802px;
+  max-height: 1366px;
+  margin-left: 142px;
+  background: #17151C;
+  border-radius: 10px;
 }
 
 $header-height: 48px;
@@ -16,10 +27,7 @@ header
   padding: 12px 24px;
   }
 .logo {
-  max-width: 237px;
-  height: 48px;
   margin-top: 12px;
-  margin-left: 24px;
   right: 541px;
   top: 0px;
   bottom: 0px;
@@ -35,70 +43,130 @@ a {
   text-decoration: none
 }
 
+#top-menu a {
+  padding: 12px 31px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F2F2F2;
+}
+
 #top-menu a:hover {
-  background: blue;
+  background: #133774;
   border-radius: 99px;
+  line-height: 24px;
 }
 
 .IB {
-  height: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.44px;
-  color: #F2F2F2;
 }
 
 .flights {
-  height: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.44px;
-  color: #F2F2F2;
 }
 .ToDo {
-  height: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.44px;
-  color: #F2F2F2;
 }
 .Meeting {
-  height: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.44px;
-  color: #F2F2F2;
 }
 .Settings {
-  height: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.44px;
-  color: #F2F2F2;
-  padding: 16px 0;
+}
+
+table {
+  color: white;
+  text-align: center;
+}
+
+table th {
+  left: 24px;
+  right: 264px;
+  top: 60px;
+  bottom: 240px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  color: #EEECF1;
+
+}
+
+table tr {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+table td {
+  max-width: 272px;
+  max-height: 200px;
+  left: 24px;
+  top: 92px;
+  padding: 10px;
+}
+
+table * {
+  border: 1px solid grey;
+  border:none;
+}
+
+#date-selector {
+  max-width: 752px;
+  max-height: 428px;
+  margin-left: 25px;
+  top: 128px;
+  background: #000000;
+  border-radius: 10px;
+
+}
+
+.calendar1 {
+  max-width: 320px;
+  max-height: 316px;
+  margin-top: 80px;
+  margin-left: 52px;
+  border-radius: 10px;
+  padding: 80px;
+}
+
+
+.daysofweek {
+  max-width: 272px;
+  max-height: 16px;
 }
