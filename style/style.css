@@ -12,8 +12,8 @@ body {
   border-radius: 10px; }
 
 header {
-  max-width: 802px;
-  height: 72px;
+  width: 100%;
+  box-sizing: border-box;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -32,16 +32,12 @@ header {
   margin-top: 24px;
   margin-right: 28px; }
 
-a {
-  color: #F2F2F2;
-  padding: 2px;
-  text-decoration: none; }
-
 #top-menu a {
-  padding: 12px 31px;
+  padding: 12px 24px;
   height: 24px;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
   color: #F2F2F2; }
 
 #top-menu a:hover {
@@ -96,7 +92,10 @@ a {
 
 table {
   color: white;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 table th {
   left: 24px;
@@ -130,21 +129,94 @@ table * {
   border: 1px solid grey;
   border: none; }
 
+.PAD {
+  width: 228px;
+  height: 48px;
+  margin-left: 24px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  align-items: center;
+  letter-spacing: -0.56px;
+  color: #EEECF1;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.48);
+  justify-content: space-between; }
+
+.block2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#tcontrols {
+  width: 476px;
+  padding: 2px;
+  margin-left: 50px;
+  margin-right: 24px;
+  background: #000000;
+  border-radius: 10px;
+  text-align: center; }
+
+#tcontrols a {
+  padding: 3px 21px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #7A7585; }
+
+#tcontrols a:hover {
+  color: white;
+  background: #2A2731;
+  border-radius: 10px;
+  line-height: 24px; }
+
+.Tickets {
+  margin-top: 13px; }
+
 #date-selector {
-  max-width: 752px;
-  max-height: 428px;
-  margin-left: 25px;
-  top: 128px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 35px;
   background: #000000;
   border-radius: 10px; }
+
+.segmented {
+  width: 224px;
+  height: 32px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center; }
+
+.button1 {
+  height: 24px;
+  left: 12px;
+  right: 12.4px;
+  top: calc(50% - 24px/2);
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #7A7585; }
+
+.calendars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 79px; }
 
 .calendar1 {
   max-width: 320px;
   max-height: 316px;
-  margin-top: 80px;
-  margin-left: 52px;
-  border-radius: 10px;
-  padding: 80px; }
+  border-radius: 10px; }
 
 .daysofweek {
   max-width: 272px;
