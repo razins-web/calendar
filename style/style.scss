@@ -1,6 +1,4 @@
 body {
-  max-width: 1440px;
-  max-height: 1366px;
   background: #2A2731;
   border-radius: 10px;
 }
@@ -24,13 +22,24 @@ header {
   justify-content: space-between;
   background-color: black;
   padding: 12px 24px;
+}
+  main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
   }
+
 .logo {
   margin-top: 12px;
   right: 541px;
   top: 0px;
   bottom: 0px;
 }
+
+.toggle {
+  display: none;
+}
+
 #top-menu {
   margin-top: 24px;
   margin-right: 28px;
@@ -98,6 +107,14 @@ header {
   letter-spacing: 0.44px;
 }
 
+.block2 {
+  width: 100%;
+  box-sizing: border-box;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 table {
   color: white;
   text-align: center;
@@ -146,7 +163,6 @@ table * {
 .PAD {
   width: 228px;
   height: 48px;
-  margin-left: 24px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: bold;
@@ -159,24 +175,16 @@ table * {
   justify-content: space-between;
 }
 
-.block2 {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 #tcontrols {
-  width: 476px;
-  padding: 2px;
-  margin-left: 50px;
-  margin-right: 24px;
+  padding: 9px 2px;
   background: #000000;
   border-radius: 10px;
   text-align: center;
 }
 
 #tcontrols a {
-  padding: 3px 21px;
+  padding: 9px 22px;
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: 600;
@@ -198,9 +206,7 @@ table * {
 }
 
 #date-selector {
-  width: 100%;
   box-sizing: border-box;
-  padding: 8px 35px;
   background: #000000;
   border-radius: 10px;
 }
@@ -213,19 +219,44 @@ table * {
   align-items: center;
 }
 
+.buttons {
+  background: #3C3844;
+  border-radius: 99px;
+  display: inline-flex;
+  margin-top: 40px;
+  margin-left: 261px;
+}
+
+.buttons a {
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  color: white;
+  background: #1F4921;
+  border: 2px solid #2B662E;
+  box-sizing: border-box;
+  border-radius: 99px;
+  padding: 4px 12px;
+}
+
 .button1 {
-  height: 24px;
-  left: 12px;
-  right: 12.4px;
-  top: calc(50% - 24px/2);
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  letter-spacing: 0.15px;
+  color: #7A7585
+}
+
+.button2 {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0.15px;
   color: #7A7585
 }
@@ -234,7 +265,7 @@ table * {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 79px;
+  padding: 8px 24px;
 }
 
 .calendar1 {
@@ -247,4 +278,95 @@ table * {
 .daysofweek {
   max-width: 272px;
   max-height: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  #center {
+      background: #2A2731;
+      border-radius: 10px;
+      margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  #tcontrols a:hover {
+    background: #000000;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 52px;
+
+     }
+
+      #top-menu {
+        display: none;
+      }
+
+    }
+
+@media screen and (max-width: 800px) {
+    .toggle {
+      display: flex;
+      align-items: center;
+ }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 52px;
+     }
+
+     .block2 {
+        flex-direction: column-reverse;
+     }
+
+     .PAD {
+       align-self: flex-start;
+     }
+
+     #tcontrols {
+      background: #17151C;
+      border-radius: 10px;
+     }
+
+     #date-selector {
+       margin: auto;
+     }
+
+     .buttons {
+       display: none;
+     }
+
+     .calendars {
+       justify-content: center;
+     }
+
+     .calendar1 {
+       display: flex;
+     }
+
+    .MMay::before {
+      content: url("../images/left.svg");
+      color: #87C289;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    .MMay::after {
+      content: url("../images/right.svg");
+      color: #87C289;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+
+      .calendar2 {
+        display: none;
+    }
 }
